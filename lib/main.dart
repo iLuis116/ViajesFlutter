@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app5b/screens/description_place_screen.dart';
 import 'package:travel_app5b/screens/gradient_black.dart';
+import 'package:travel_app5b/screens/hearder.dart';
 import 'package:travel_app5b/screens/reviewlist.dart';
 
 
@@ -33,7 +34,7 @@ class MainApp extends StatelessWidget {
                 const ReviewList(),
               ],
             ),
-            const GradientBlack(),
+            const Header(),
           ],
         ),
       ),

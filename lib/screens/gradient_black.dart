@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class GradientBlack extends StatelessWidget {
-  const GradientBlack({super.key});
+  final String title;
+  const GradientBlack({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +19,15 @@ class GradientBlack extends StatelessWidget {
             end: FractionalOffset(1.0, 0.6),
             stops: [0.0, 0.6],
             tileMode: TileMode.clamp,
+          ),
+        ),
+        alignment: const Alignment(-0.9, -0.6),
+        child: Text(
+          title,
+          style: GoogleFonts.actor(
+            color: Colors.white,
+            fontSize: 30.0,
+            fontWeight: FontWeight.bold,
           ),
         ),
     );
